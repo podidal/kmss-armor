@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронювання вікон від вибухів та уламків | KMSS+ «Комфорт-Монтаж»</title>
+  <meta name="description" content="Сертифікована поклейка та фабричний розкрій бронеплівки на вікна в Україні (класи К1, К2, К4/Р1А, Р2А). Захист від ударної хвилі та розльоту уламків скла. Готові набори «Поклей Сам» з інструментом Blue Max та монтаж під ключ у Дніпрі, Києві, Львові, Одесі. Оплата карткою «єВідновлення».">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kmss: {
+              blue: '#1d4ed8',
+              blueDark: '#1e3a8a',
+              orange: '#ea580c',
+              orangeHover: '#c2410c',
+              dark: '#0f172a',
+              slate: '#1e293b',
+              alert: '#dc2626'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+            heading: ['Montserrat', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Telegram WebApp SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased font-sans selection:bg-orange-600 selection:text-white min-h-screen flex flex-col justify-between">
+
+  <!-- 1. TOP EMERGENCY & TRUST BAR (KIEVTONSERVICE + STEKO HYBRID) -->
+  <div class="bg-slate-900 text-slate-300 px-4 py-2 text-xs font-mono border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2 truncate">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-500 animate-ping shrink-0"></span>
+        <span class="truncate text-[11px] sm:text-xs">
+          🛡️ <strong>СЕРТИФІКОВАНИЙ ЗАХИСТ ВІКОН ВІД ВИБУХІВ ДСТУ EN 356</strong> • ПАРТНЕР «єВІДНОВЛЕННЯ» • ВІДПРАВКА 24 ГОДИНИ
+        </span>
+      </div>
+      <div class="flex items-center gap-3 text-[11px] font-bold shrink-0">
+        <span class="text-slate-400 hidden md:inline">Працюємо: Дніпро, Київ, Львів, Одеса, вся Україна</span>
+        <a href="tel:+380967713808" class="text-orange-400 hover:text-white transition-colors">📞 (096) 771-38-08</a>
+        <span class="text-slate-600">|</span>
+        <a href="https://t.me/kmss_bot" target="_blank" class="text-sky-400 hover:text-white transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.939z"/></svg>
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. HIGH-TRUST WHITE NAVBAR (WITH ORIGINAL BLACK LOGO - NEVER ALTERED) -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+      
+      <!-- Brand Logo (Original Black LOGOBlk.svg) -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <img src="assets/logo/LOGOBlk.svg" alt="КОМФОРТ МОНТАЖ СПЕЦСЕРВІС +" class="h-10 sm:h-12 w-auto group-hover:opacity-85 transition-opacity">
+        <div class="hidden xl:block border-l border-slate-200 pl-3 text-[11px] leading-tight text-slate-500 font-medium">
+          Завод бронеплівок<br><strong class="text-slate-900">та захисного скління</strong>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-5 text-xs font-heading font-bold uppercase tracking-wider text-slate-700">
+        <a href="#proof" class="hover:text-orange-600 transition-colors">Фото з вибухів</a>
+        <a href="#benefits" class="hover:text-orange-600 transition-colors">Переваги</a>
+        <a href="#crashtests" class="hover:text-orange-600 transition-colors">Краш-тести</a>
+        <a href="#products" class="hover:text-orange-600 transition-colors">Класи броні (К1-Р2А)</a>
+        <a href="#calculator" class="hover:text-orange-600 transition-colors">Калькулятор розкрою</a>
+        <a href="#faq" class="hover:text-orange-600 transition-colors">FAQ</a>
+        <a href="#evidnovlennya" class="text-emerald-700 hover:text-emerald-800 transition-colors flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+          <span>єВідновлення</span>
+        </a>
+      </nav>
+
+      <!-- Fast Actions -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+380967713808" class="hidden sm:flex flex-col text-right font-mono text-xs">
+          <span class="text-[10px] text-slate-400 uppercase font-bold">Гаряча лінія:</span>
+          <span class="font-extrabold text-slate-900 hover:text-orange-600">(096) 771-38-08</span>
+        </a>
+        <button onclick="openLeadModal('Швидкий розрахунок з шапки')" class="btn-steko btn-steko-primary text-xs shadow-md">
+          <span>Отримати знижку 10%</span>
+          <span>⚡</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+    
+    <!-- 3. HERO SECTION (KIEVTONSERVICE DIRECT RESPONSE HERO + LIVE 10% DISCOUNT FORM) -->
+    <section class="relative bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden py-12 lg:py-16 border-b border-slate-800">
+      
+      <!-- Ambient Background Graphic -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-15 pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1600&q=80');"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Hero Copy Left (7 cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-600/20 border border-red-500/40 text-red-400 text-xs font-mono font-bold uppercase tracking-wider">
+              <span>🚨</span>
+              <span>ПРОФЕСІЙНИЙ ЗАХИСТ ВІД РОЗЛЬОТУ УЛАМКІВ СКЛА</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-5xl font-heading font-black tracking-tight leading-[1.12] text-white uppercase">
+              БРОНЕПЛІВКА НА ВІКНА:<br>
+              <span class="text-orange-500">ЗАХИСТ ВІД ВИБУХІВ</span> ТА УЛАМКІВ
+            </h1>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+              Сертифікована протиударна бронеплівка за стандартом <strong>ДСТУ EN 356</strong> (класи 112, 200, 300, 400 мкм). 
+              Утримує скло монолітом у рамі під час вибухової хвилі від ракет чи дронів, захищаючи людей від смертоносних уламків.
+            </p>
+
+            <!-- Key Bullet Points (Direct & High Impact) -->
+            <div class="space-y-2.5 font-medium text-xs sm:text-sm text-slate-200">
+              <div class="flex items-center gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">✓</span>
+                <span><strong>Скло на плівці, а не в приміщенні:</strong> затримує до 98% розльоту уламків</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold shrink-0">✓</span>
+                <span><strong>Фабричний розкрій під ваші міліметри:</strong> надсилаємо нарізані полотна без зайвого клопоту</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold shrink-0">✓</span>
+                <span><strong>Набір «Поклей Сам» з американською вигонкою Blue Max:</strong> поклейка за 15 хв</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">✓</span>
+                <span><strong>«Страховка від кривих рук»:</strong> якщо зіпсували шматок — безкоштовно надішлемо новий!</span>
+              </div>
+            </div>
+
+            <!-- Regional Trust Badge -->
+            <div class="pt-2 flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+              <span class="text-orange-400 font-bold">📍 Працюємо:</span>
+              <span class="bg-slate-800/80 px-2 py-1 rounded border border-slate-700">Дніпро</span>
+              <span class="bg-slate-800/80 px-2 py-1 rounded border border-slate-700">Київ</span>
+              <span class="bg-slate-800/80 px-2 py-1 rounded border border-slate-700">Львів</span>
+              <span class="bg-slate-800/80 px-2 py-1 rounded border border-slate-700">Одеса</span>
+              <span class="bg-slate-800/80 px-2 py-1 rounded border border-slate-700">Харків</span>
+              <span class="bg-slate-800/80 px-2 py-1 rounded border border-slate-700">Вся Україна (Нова Пошта 24г)</span>
+            </div>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="#proof" class="btn-steko btn-steko-outline text-xs bg-slate-800/70 text-white border-slate-600 hover:bg-slate-700">
+                <span>📷 Реальні фото з вибухів</span>
+              </a>
+              <a href="#calculator" class="btn-steko btn-steko-primary text-xs shadow-lg">
+                <span>📐 Калькулятор стулок</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Right: Direct Response Lead Box (Exact Kievtonservice Mechanism with -10% Discount) -->
+          <div class="lg:col-span-5" id="hero-lead-box">
+            <div class="steko-card p-6 sm:p-7 bg-white text-slate-900 border border-slate-200 shadow-2xl relative overflow-hidden">
+              
+              <!-- Red Discount Ribbon -->
+              <div class="absolute -right-12 top-6 bg-red-600 text-white text-[10px] font-mono font-black uppercase tracking-wider py-1 px-12 rotate-45 shadow-md">
+                ЗНИЖКА 10%
+              </div>
+
+              <div class="border-b border-slate-100 pb-3 mb-4">
+                <div class="text-[10px] font-mono text-red-600 font-bold uppercase tracking-wider mb-1">
+                  ⚡ СПЕЦІАЛЬНА ПРОПОЗИЦІЯ СЬОГОДНІ
+                </div>
+                <h3 class="font-heading font-black text-lg uppercase text-slate-900 leading-tight">
+                  Попередній розрахунок вартості зі знижкою 10%
+                </h3>
+                <p class="text-xs text-slate-500 mt-1">
+                  Отримайте точну вартість під ваші вікна + відеоінструкцію монтажу у подарунок!
+                </p>
+              </div>
+
+              <!-- Interactive Quick Calculator Form -->
+              <form id="hero-lead-form" onsubmit="submitHeroLeadForm(event)" class="space-y-3.5 font-mono text-xs">
+                
+                <!-- Format Toggle: DIY vs Turnkey -->
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1 uppercase font-bold">Оберіть формат замовлення:</label>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button 
+                      type="button" 
+                      id="hero-type-diy" 
+                      onclick="setHeroOrderType('diy')"
+                      class="p-2 rounded-xl border-2 border-orange-600 bg-orange-50 font-bold text-orange-700 text-[11px] text-center transition-all"
+                    >
+                      📦 Набір «Поклей Сам»
+                    </button>
+                    <button 
+                      type="button" 
+                      id="hero-type-pro" 
+                      onclick="setHeroOrderType('pro')"
+                      class="p-2 rounded-xl border border-slate-300 bg-white font-bold text-slate-700 text-[11px] text-center transition-all hover:border-slate-400"
+                    >
+                      🛠️ Монтаж «Під Ключ»
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Film Class Selector -->
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1 uppercase font-bold">Клас бронеплівки:</label>
+                  <select 
+                    id="hero-lead-class" 
+                    onchange="updateHeroCalcLive()" 
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 outline-none focus:border-blue-600 transition-colors text-xs font-mono font-medium"
+                  >
+                    <option value="300" selected>300 мкм (К4 / Р1А) — ХІТ! Рекомендовано від вибухів</option>
+                    <option value="200">200 мкм (Клас К2) — Посилена від ударної хвилі</option>
+                    <option value="112">112 мкм (Клас К1) — Базова протиосколкова</option>
+                    <option value="400">400 мкм (Клас Р2А) — Максимальна банківська броня</option>
+                    <option value="solar">Сонцезахисна дзеркальна Silver 20% (захист від спеки)</option>
+                  </select>
+                </div>
+
+                <!-- Approximate Square Meters Buttons (As on Kievtonservice) -->
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1 uppercase font-bold">Скільки орієнтовно м² треба поклеїти?</label>
+                  <div class="grid grid-cols-4 gap-1.5 mb-2">
+                    <button type="button" onclick="setHeroM2(5)" class="hero-m2-btn p-1.5 rounded-lg border border-slate-300 text-slate-700 text-center font-bold hover:bg-slate-100 transition-colors" data-m2="5">5 м²</button>
+                    <button type="button" onclick="setHeroM2(10)" class="hero-m2-btn p-1.5 rounded-lg border-2 border-blue-600 bg-blue-50 text-blue-800 text-center font-bold" data-m2="10">10 м²</button>
+                    <button type="button" onclick="setHeroM2(15)" class="hero-m2-btn p-1.5 rounded-lg border border-slate-300 text-slate-700 text-center font-bold hover:bg-slate-100 transition-colors" data-m2="15">15 м²</button>
+                    <button type="button" onclick="setHeroM2(25)" class="hero-m2-btn p-1.5 rounded-lg border border-slate-300 text-slate-700 text-center font-bold hover:bg-slate-100 transition-colors" data-m2="25">25+ м²</button>
+                  </div>
+                  <input 
+                    id="hero-lead-m2" 
+                    type="number" 
+                    value="10" 
+                    min="1" 
+                    max="500" 
+                    oninput="updateHeroCalcLive()" 
+                    placeholder="Або введіть точну площу м²..." 
+                    class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+                  />
+                </div>
+
+                <!-- Live Price Calculation Ribbon -->
+                <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between">
+                  <div>
+                    <div class="text-[10px] text-amber-800 uppercase font-bold">Орієнтовна вартість зі знижкою 10%:</div>
+                    <div id="hero-live-estimate" class="text-xl font-black text-slate-900 font-mono">
+                      6 750 ₴ <span class="text-xs text-red-600 font-normal line-through">7 500 ₴</span>
+                    </div>
+                  </div>
+                  <div class="text-right text-[10px] text-emerald-700 font-bold">
+                    ✓ Економія 750 ₴<br>
+                    <span class="text-slate-500 font-normal">Інструмент у комплекті</span>
+                  </div>
+                </div>
+
+                <!-- Phone Input (Required) -->
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1 uppercase font-bold">Номер телефону *:</label>
+                  <input 
+                    id="hero-lead-phone" 
+                    type="tel" 
+                    required 
+                    placeholder="+380 (__) ___-__-__" 
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-mono text-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
+                  />
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-steko btn-steko-primary w-full text-xs py-3.5 font-bold uppercase shadow-lg">
+                  Отримати розрахунок та знижку 10% 🚀
+                </button>
+
+                <div class="flex items-center justify-center gap-4 text-[10px] text-slate-500 pt-1">
+                  <span>⏱️ Відповідь за 5 хв</span>
+                  <span>•</span>
+                  <span>🔒 Без спаму</span>
+                  <span>•</span>
+                  <span>🎁 Відеоінструкція</span>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CORE 3 BENEFITS (DIRECT FROM KIEVTONSERVICE) -->
+    <section id="benefits" class="py-14 lg:py-20 border-b border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 border border-orange-200 text-orange-700 text-xs font-mono font-bold uppercase mb-3">
+            <span>🛡️</span>
+            <span>БЕЗПЕКА ТА ЗАХИСТ ВІД KMSS+</span>
+          </div>
+          <h2 class="steko-section-title">
+            Додайте міцності вашим вікнам <span>за допомогою бронеплівки</span>
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Чому сертифікована бронеплівка KMSS+ є обов'язковим елементом захисту кожної оселі під час війни.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Benefit 1: Shard Protection -->
+          <div class="steko-card p-6 border-slate-200 relative group hover:border-orange-300 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition-transform">
+              💥
+            </div>
+            <h3 class="font-heading font-black text-lg text-slate-900 mb-3 uppercase">
+              Захист від уламків
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Бронеплівка зменшує ризик розлітання уламків скла під час вибухових хвиль, ударів, артилерійських обстрілів чи спроб злому. Скло залишається зафіксованим у рамі, забезпечуючи надійний захист для вас та ваших близьких.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 text-[11px] font-mono font-bold text-orange-600">
+              Утримує 98% осколків
+            </div>
+          </div>
+
+          <!-- Benefit 2: Anti-Burglary -->
+          <div class="steko-card p-6 border-slate-200 relative group hover:border-blue-300 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition-transform">
+              🔒
+            </div>
+            <h3 class="font-heading font-black text-lg text-slate-900 mb-3 uppercase">
+              Захист від проникнення
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Бронеплівка створює надміцний багатошаровий бар’єр, що зупиняє удари кувалдою, ломом чи цеглою. Вона затримує зловмисників та дає достатньо часу для прибуття поліції охорони у разі спрацювання сигналізації.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 text-[11px] font-mono font-bold text-blue-600">
+              Стандарт ДСТУ EN 356 (Р1А / Р2А)
+            </div>
+          </div>
+
+          <!-- Benefit 3: Invisible & Clean -->
+          <div class="steko-card p-6 border-slate-200 relative group hover:border-emerald-300 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition-transform">
+              🪟
+            </div>
+            <h3 class="font-heading font-black text-lg text-slate-900 mb-3 uppercase">
+              Залишається непомітною
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Бронеплівка абсолютно прозора (світлопроникність 92-95%) та не спотворює оптичний вид ваших вікон. На відміну від небезпечного скотчу, плівка не псує скло та не залишає темних смуг чи токсичного клею.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 text-[11px] font-mono font-bold text-emerald-600">
+              100% прозорість • 99% захист від УФ
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. REAL WAR PROOF & IMPACT SHOCKWAVE (KIEVTONSERVICE'S BEST CONVERTING BLOCK) -->
+    <section id="proof" class="py-16 lg:py-24 border-b border-slate-200 bg-[#f8fafc]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-red-100 text-red-800 text-xs font-mono font-bold uppercase mb-3">
+            <span>📷</span>
+            <span>РЕАЛЬНИЙ ДОСВІД КЛІЄНТІВ KMSS+</span>
+          </div>
+          <h2 class="steko-section-title">
+            Бронеплівка затримує розліт уламків:<br>
+            <span>скло на плівці, а не в приміщенні</span>
+          </h2>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            На цих фотографіях ви бачите реальні приклади того, як спрацювала захисна бронеплівка KMSS+ під час вибухів. 
+            Ці знімки нам надіслали вдячні клієнти, для яких ми виготовляли та клеїли плівку. 
+            Вона втримала скло монолітом і не дозволила йому розлетітися на гострі кинджали по кімнаті. 
+            Звісно, це не скасовує необхідності перебування в укритті під час тривоги, але забезпечує критично важливий рівень захисту життя.
+          </p>
+        </div>
+
+        <!-- Before / After Visual Comparison -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-center">
+          
+          <!-- Danger Side: Without Film -->
+          <div class="steko-card p-6 border-red-200 bg-red-50/50">
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded bg-red-600 text-white font-mono text-xs font-bold uppercase">❌ БЕЗ БРОНЕПЛІВКИ / ЗІ СКОТЧЕМ</span>
+              <span class="text-xs font-mono text-red-600 font-bold">Смертельна небезпека</span>
+            </div>
+            <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden mb-4 relative">
+              <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" alt="Розбите скло без захисту" class="w-full h-full object-cover opacity-80">
+              <div class="absolute inset-0 bg-red-950/40 flex items-center justify-center p-4 text-center">
+                <div class="bg-black/80 backdrop-blur p-4 rounded-xl text-white text-xs max-w-sm">
+                  ⚠️ Скло розлітається на тисячі гострих уламків зі швидкістю до 40 м/с на відстань 10-15 метрів у глибину приміщення.
+                </div>
+              </div>
+            </div>
+            <ul class="space-y-2 text-xs text-slate-700 font-mono">
+              <li class="flex items-center gap-2 text-red-700">❌ Скотч утримує лише 5% скла та залишає смертельні ножі</li>
+              <li class="flex items-center gap-2 text-red-700">❌ Важкі осколкові травми людей у кімнаті</li>
+              <li class="flex items-center gap-2 text-red-700">❌ Знищені меблі, техніка та стіни</li>
+            </ul>
+          </div>
+
+          <!-- Safe Side: With KMSS Armor Film -->
+          <div class="steko-card p-6 border-emerald-300 bg-emerald-50/50">
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded bg-emerald-600 text-white font-mono text-xs font-bold uppercase">✓ З БРОНЕПЛІВКОЮ KMSS+ 300 МКМ</span>
+              <span class="text-xs font-mono text-emerald-700 font-bold">100% Утримання</span>
+            </div>
+            <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden mb-4 relative">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Скло на бронеплівці" class="w-full h-full object-cover opacity-85">
+              <div class="absolute inset-0 bg-emerald-950/30 flex items-center justify-center p-4 text-center">
+                <div class="bg-black/80 backdrop-blur p-4 rounded-xl text-white text-xs max-w-sm">
+                  🛡️ Скло покривається павутиною тріщин, але залишається суцільним полотном на міцному полімерному клею у рамі!
+                </div>
+              </div>
+            </div>
+            <ul class="space-y-2 text-xs text-slate-700 font-mono">
+              <li class="flex items-center gap-2 text-emerald-800 font-bold">✓ Жодного осколка не потрапляє всередину кімнати</li>
+              <li class="flex items-center gap-2 text-emerald-800 font-bold">✓ Вікно продовжує тримати контур та захищати від холоду</li>
+              <li class="flex items-center gap-2 text-emerald-800 font-bold">✓ Сертифікат ДСТУ EN 356 (витримує удар кулі 4.11 кг)</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- 4 Real Case Photo Cards (Kievtonservice Gallery Style) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <div class="steko-card overflow-hidden bg-white">
+            <div class="aspect-square bg-slate-100 relative">
+              <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=600&q=80" alt="Бронеплівка Дніпро" class="w-full h-full object-cover">
+              <div class="absolute top-2 left-2 bg-slate-900/90 text-white text-[10px] font-mono px-2 py-0.5 rounded font-bold">
+                📍 м. Дніпро
+              </div>
+              <div class="absolute bottom-2 left-2 right-2 bg-slate-900/80 backdrop-blur text-white text-[11px] p-2 rounded">
+                Ударна хвиля 120м. Скло тріснуло, але залишилося монолітом.
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="font-heading font-bold text-xs text-slate-900">Житловий будинок, 6 поверх</div>
+              <div class="text-[10px] text-slate-500 font-mono">Плівка KMSS 300 мкм (Р1А)</div>
+            </div>
+          </div>
+
+          <div class="steko-card overflow-hidden bg-white">
+            <div class="aspect-square bg-slate-100 relative">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Бронеплівка Київ" class="w-full h-full object-cover">
+              <div class="absolute top-2 left-2 bg-slate-900/90 text-white text-[10px] font-mono px-2 py-0.5 rounded font-bold">
+                📍 м. Київ
+              </div>
+              <div class="absolute bottom-2 left-2 right-2 bg-slate-900/80 backdrop-blur text-white text-[11px] p-2 rounded">
+                Вітрина офісного центру 3×2.2м. Повна безпека персоналу.
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="font-heading font-bold text-xs text-slate-900">Бізнес-центр у центрі міста</div>
+              <div class="text-[10px] text-slate-500 font-mono">Плівка KMSS 400 мкм (Р2А)</div>
+            </div>
+          </div>
+
+          <div class="steko-card overflow-hidden bg-white">
+            <div class="aspect-square bg-slate-100 relative">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Бронеплівка Запоріжжя" class="w-full h-full object-cover">
+              <div class="absolute top-2 left-2 bg-slate-900/90 text-white text-[10px] font-mono px-2 py-0.5 rounded font-bold">
+                📍 м. Запоріжжя
+              </div>
+              <div class="absolute bottom-2 left-2 right-2 bg-slate-900/80 backdrop-blur text-white text-[11px] p-2 rounded">
+                Приватний будинок. Клієнт поклеїв сам набором «Поклей Сам».
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="font-heading font-bold text-xs text-slate-900">Котедж, 8 вікон</div>
+              <div class="text-[10px] text-slate-500 font-mono">Самостійна поклейка за 2 год</div>
+            </div>
+          </div>
+
+          <div class="steko-card overflow-hidden bg-white">
+            <div class="aspect-square bg-slate-100 relative">
+              <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" alt="Бронеплівка Харків" class="w-full h-full object-cover">
+              <div class="absolute top-2 left-2 bg-slate-900/90 text-white text-[10px] font-mono px-2 py-0.5 rounded font-bold">
+                📍 м. Харків
+              </div>
+              <div class="absolute bottom-2 left-2 right-2 bg-slate-900/80 backdrop-blur text-white text-[11px] p-2 rounded">
+                Школа-ліцей. Поклейка 380 м² за програмою захисту дітей.
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="font-heading font-bold text-xs text-slate-900">Освітній заклад</div>
+              <div class="text-[10px] text-slate-500 font-mono">Безготівка з ПДВ для громади</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. CRASH TESTS & VIDEO PROOF (KIEVTONSERVICE TESTS) -->
+    <section id="crashtests" class="py-16 lg:py-20 border-b border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-mono font-bold uppercase mb-3">
+            <span>🔨</span>
+            <span>ФІЗИЧНІ ВИПРОБУВАННЯ ТА ТЕСТИ</span>
+          </div>
+          <h2 class="steko-section-title">
+            Краш-тести бронеплівки KMSS+ <span>на міцність</span>
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Подивіться, як поводиться скло під прямими ударами кувалди, лома, цегли та вибухової хвилі.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="steko-card p-5 cursor-pointer group" onclick="openVideoModal('hammer')">
+            <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden relative mb-4">
+              <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Тест молотком" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-orange-600 text-white flex items-center justify-center text-lg pl-1 shadow-lg group-hover:scale-110 transition-transform">
+                  ▶
+                </div>
+              </div>
+              <span class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-mono px-2 py-0.5 rounded">0:45</span>
+            </div>
+            <div class="font-heading font-black text-sm text-slate-900 mb-1">🔨 Тест молотком і ломом</div>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              20 сильних прямих ударів металевим молотком: скло кришиться, але плівка не пробивається.
+            </p>
+          </div>
+
+          <div class="steko-card p-5 cursor-pointer group" onclick="openVideoModal('ball')">
+            <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden relative mb-4">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Тест кулею ДСТУ" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg pl-1 shadow-lg group-hover:scale-110 transition-transform">
+                  ▶
+                </div>
+              </div>
+              <span class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-mono px-2 py-0.5 rounded">1:12</span>
+            </div>
+            <div class="font-heading font-black text-sm text-slate-900 mb-1">⚖️ Тест кулею 4.11 кг ДСТУ EN 356</div>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Падіння сталевої кулі з висоти 1.5 метра (клас Р1А). Жодного наскрізного отвору.
+            </p>
+          </div>
+
+          <div class="steko-card p-5 cursor-pointer group" onclick="openVideoModal('diy')">
+            <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden relative mb-4">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Відеоурок поклейки" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg pl-1 shadow-lg group-hover:scale-110 transition-transform">
+                  ▶
+                </div>
+              </div>
+              <span class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-mono px-2 py-0.5 rounded">3:20</span>
+            </div>
+            <div class="font-heading font-black text-sm text-slate-900 mb-1">🎓 Як поклеїти за 15 хвилин</div>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Покроковий майстер-клас: використання вигонки Blue Max, розчину Film-On та поклейка без бульбашок.
+            </p>
+          </div>
+
+          <div class="steko-card p-5 cursor-pointer group" onclick="openVideoModal('brick')">
+            <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden relative mb-4">
+              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Тест цеглиною" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center text-lg pl-1 shadow-lg group-hover:scale-110 transition-transform">
+                  ▶
+                </div>
+              </div>
+              <span class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-mono px-2 py-0.5 rounded">0:50</span>
+            </div>
+            <div class="font-heading font-black text-sm text-slate-900 mb-1">🧱 Тест цеглою та антивандал</div>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Кидок силікатної цегли з розмаху: скло відпружинює удар, захищаючи людей всередині.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. COMPARISON TABLE: KMSS DIY KIT vs TURNKEY MOUNTING vs TAPE -->
+    <section class="py-16 border-b border-slate-200 bg-[#f8fafc]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-orange-700 text-xs font-mono font-bold uppercase mb-3">
+            <span>⚖️</span>
+            <span>ЧЕСНЕ ПОРІВНЯННЯ</span>
+          </div>
+          <h2 class="steko-section-title">
+            Як захистити вікна: <span>3 варіанти</span>
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Порівняйте набір «Поклей Сам», виклик монтажної бригади та звичайний скотч.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+          
+          <!-- Option 1: DIY KIT (Our Winner!) -->
+          <div class="steko-card p-6 border-2 border-orange-600 bg-white relative shadow-xl flex flex-col justify-between">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 text-white font-mono text-[10px] font-extrabold uppercase px-4 py-1 rounded-full shadow">
+              🔥 НАЙВИГІДНІШЕ • ХІТ ПРОДАЖІВ
+            </span>
+            <div>
+              <div class="text-center pt-2 pb-4 border-b border-slate-100">
+                <div class="text-xs font-mono text-orange-600 font-bold uppercase">Вся Україна (Нова Пошта 24г)</div>
+                <h3 class="font-heading font-black text-xl text-slate-900 uppercase mt-1">Набір «Поклей Сам»</h3>
+                <div class="text-3xl font-black font-mono text-slate-900 mt-2">від 490 ₴ <span class="text-xs text-slate-500 font-normal">/ м²</span></div>
+                <p class="text-xs text-slate-500 mt-1">Фабричний розкрій під ваші міліметри</p>
+              </div>
+
+              <ul class="space-y-3 py-5 text-xs text-slate-700 font-mono">
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Порізка в міліметри:</strong> без ножа на підлозі</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Американський Blue Max + ніж Olfa</strong> у комплекті</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>«Страховка від кривих рук»:</strong> безкоштовна заміна</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Відеоінструкція 3 хв:</strong> поклеїть навіть підліток</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Економія до 60%</strong> на вартості робіт</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100">
+              <a href="#calculator" class="btn-steko btn-steko-primary w-full text-xs py-3 uppercase shadow">
+                Розрахувати свій бокс 📦
+              </a>
+            </div>
+          </div>
+
+          <!-- Option 2: Turnkey Installation (For Local Cities) -->
+          <div class="steko-card p-6 border-slate-200 bg-white flex flex-col justify-between">
+            <div>
+              <div class="text-center pt-2 pb-4 border-b border-slate-100">
+                <div class="text-xs font-mono text-blue-600 font-bold uppercase">Дніпро, Київ, Львів, Одеса</div>
+                <h3 class="font-heading font-black text-xl text-slate-900 uppercase mt-1">Монтаж «Під Ключ»</h3>
+                <div class="text-3xl font-black font-mono text-slate-900 mt-2">від 1 250 ₴ <span class="text-xs text-slate-500 font-normal">/ м²</span></div>
+                <p class="text-xs text-slate-500 mt-1">Плівка + робота сертифікованого майстра</p>
+              </div>
+
+              <ul class="space-y-3 py-5 text-xs text-slate-700 font-mono">
+                <li class="flex items-center gap-2">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Виїзд замірника з каталогом зразків</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Професійний монтаж бригадою за 1-2 год</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Офіційний акт та гарантія 10 років</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Оплата після прийняття роботи</span>
+                </li>
+                <li class="flex items-center gap-2 text-slate-400">
+                  <span>ℹ️</span>
+                  <span>Доступно в базових містах України</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100">
+              <button onclick="openLeadModal('Виклик замірника під ключ')" class="btn-steko btn-steko-blue w-full text-xs py-3 uppercase">
+                Викликати замірника 🛠️
+              </button>
+            </div>
+          </div>
+
+          <!-- Option 3: Masking Tape (Dangerous Useless Myth) -->
+          <div class="steko-card p-6 border-red-200 bg-red-50/30 flex flex-col justify-between opacity-80">
+            <div>
+              <div class="text-center pt-2 pb-4 border-b border-red-100">
+                <div class="text-xs font-mono text-red-600 font-bold uppercase">Небезпечна ілюзія</div>
+                <h3 class="font-heading font-black text-xl text-slate-800 uppercase mt-1">Скотч або хрести</h3>
+                <div class="text-3xl font-black font-mono text-slate-600 mt-2">0-100 ₴ <span class="text-xs text-slate-400 font-normal">/ рулон</span></div>
+                <p class="text-xs text-red-600 font-bold mt-1">0% захисту від ударної хвилі</p>
+              </div>
+
+              <ul class="space-y-3 py-5 text-xs text-slate-600 font-mono">
+                <li class="flex items-center gap-2 text-red-700">
+                  <span>❌</span>
+                  <span>Скло розлітається на великі важкі ножі</span>
+                </li>
+                <li class="flex items-center gap-2 text-red-700">
+                  <span>❌</span>
+                  <span>Не утримує тиск ударної хвилі дрона/ракети</span>
+                </li>
+                <li class="flex items-center gap-2 text-red-700">
+                  <span>❌</span>
+                  <span>В'їдається клеєм у скло за 2 тижні на сонці</span>
+                </li>
+                <li class="flex items-center gap-2 text-red-700">
+                  <span>❌</span>
+                  <span>Псує зовнішній вигляд та затемнює кімнату</span>
+                </li>
+                <li class="flex items-center gap-2 text-red-700">
+                  <span>❌</span>
+                  <span>Офіційно не рекомендовано ДСНС</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-red-100">
+              <a href="#proof" class="btn-steko btn-steko-outline w-full text-xs py-3 uppercase text-red-700 border-red-300 hover:bg-red-50">
+                Дивитися наслідки ⚠️
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. PRODUCT SPECIFICATIONS & DSTU EN 356 CLASSES (STEKO 10-BOX RATING MATRIX) -->
+    <section id="products" class="py-16 lg:py-24 border-b border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 border border-orange-200 text-orange-700 text-xs font-mono font-bold uppercase mb-3">
+            <span>🛡️</span>
+            <span>КАТАЛОГ СЕРТИФІКОВАНИХ ПЛІВОК ДСТУ</span>
+          </div>
+          <h2 class="steko-section-title">
+            Класи бронеплівок заводу <span>KMSS</span>
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Оберіть необхідну товщину: від базової протиосколкової 112 мкм до максимальної банківської 400 мкм.
+          </p>
+        </div>
+
+        <!-- Steko Category Tabs Switcher -->
+        <div class="flex justify-center mb-8">
+          <div id="steko-category-tabs-container" class="steko-category-tabs"></div>
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div id="steko-products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      </div>
+    </section>
+
+    <!-- 9. 2D MASTER ROLL CALCULATOR (KMSS CUTTING ENGINE) -->
+    <section id="calculator" class="py-16 lg:py-24 border-b border-slate-200 bg-[#f8fafc]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono font-bold uppercase mb-3">
+            <span>📐</span>
+            <span>ІНТЕРАКТИВНИЙ РОЗКРІЙ РУЛОНУ 1524 ММ</span>
+          </div>
+          <h2 class="steko-section-title">
+            Калькулятор розкрою під <span>розміри ваших вікон</span>
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Введіть висоту та ширину ваших стулок у міліметрах. Система миттєво оптимізує розкладку на рулоні, покаже відхід та прорахує точну вартість.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Left: Window List & Presets (7 cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Quick Presets -->
+            <div class="steko-card p-5">
+              <div class="text-xs font-mono text-slate-500 uppercase font-bold mb-3 flex items-center justify-between">
+                <span>Швидкі типові розміри:</span>
+                <span class="text-orange-600 text-[11px] font-bold">+ Додати стулку</span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                <button type="button" onclick="addWindowPreset('Кухня / Кімната', 1300, 600)" class="p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-left text-xs transition-colors">
+                  <div class="font-bold text-slate-900 font-heading">Стандарт</div>
+                  <div class="text-[10px] font-mono text-slate-500">1300 × 600 мм</div>
+                </button>
+                <button type="button" onclick="addWindowPreset('Балконні двері', 2050, 680)" class="p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-left text-xs transition-colors">
+                  <div class="font-bold text-slate-900 font-heading">Балконні двері</div>
+                  <div class="text-[10px] font-mono text-slate-500">2050 × 680 мм</div>
+                </button>
+                <button type="button" onclick="addWindowPreset('Панорамне скло', 1600, 1100)" class="p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-left text-xs transition-colors">
+                  <div class="font-bold text-slate-900 font-heading">Панорама</div>
+                  <div class="text-[10px] font-mono text-slate-500">1600 × 1100 мм</div>
+                </button>
+                <button type="button" onclick="addWindowPreset('Санвузол', 550, 450, 'matte_white')" class="p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-left text-xs transition-colors">
+                  <div class="font-bold text-slate-900 font-heading">Кватирка / Санвузол</div>
+                  <div class="text-[10px] font-mono text-slate-500">550 × 450 мм</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Windows List -->
+            <div class="steko-card p-5 space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 class="font-heading font-extrabold text-sm uppercase text-slate-900 tracking-wider">
+                  Ваші стулки до розкрою
+                </h3>
+                <button type="button" onclick="addWindowPreset('Нове вікно', 1200, 600)" class="btn-steko btn-steko-dark text-xs py-1.5 px-3">
+                  <span>+</span>
+                  <span>Додати вікно</span>
+                </button>
+              </div>
+
+              <div id="calc-windows-container" class="space-y-3 max-h-[380px] overflow-y-auto pr-1"></div>
+            </div>
+
+            <!-- Toolkit Options -->
+            <div class="steko-card p-5">
+              <div class="text-xs font-mono text-slate-500 uppercase font-bold mb-3">Комплектація інструментом для поклейки:</div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                
+                <div id="toolkit-none" onclick="selectToolkit('none')" class="p-3.5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-slate-400 transition-all flex flex-col justify-between">
+                  <div>
+                    <div class="font-heading font-bold text-slate-900 text-xs">Без інструменту</div>
+                    <div class="text-[11px] text-slate-500 mt-1">Тільки нарізана плівка у тубусі</div>
+                  </div>
+                  <div class="text-sm font-mono font-bold text-slate-900 mt-3">0 ₴</div>
+                </div>
+
+                <div id="toolkit-basic" onclick="selectToolkit('basic')" class="p-3.5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-slate-400 transition-all flex flex-col justify-between">
+                  <div>
+                    <div class="font-heading font-bold text-slate-900 text-xs">Комплект «Старт»</div>
+                    <div class="text-[11px] text-slate-500 mt-1">Фетровий ракель + ніж + концентрат</div>
+                  </div>
+                  <div class="text-sm font-mono font-bold text-orange-600 mt-3">+250 ₴</div>
+                </div>
+
+                <div id="toolkit-pro" onclick="selectToolkit('pro')" class="p-3.5 rounded-xl border-2 border-blue-600 bg-blue-50/50 ring-2 ring-blue-600 cursor-pointer transition-all flex flex-col justify-between relative">
+                  <span class="absolute -top-2 right-2 bg-blue-600 text-white font-mono text-[9px] font-bold px-2 py-0.5 rounded">РЕКОМЕНДОВАНО</span>
+                  <div>
+                    <div class="font-heading font-bold text-slate-900 text-xs">Профі «Blue Max»</div>
+                    <div class="text-[11px] text-slate-600 mt-1">Американський Blue Max + Olfa + Film-On</div>
+                  </div>
+                  <div class="text-sm font-mono font-bold text-blue-700 mt-3">+450 ₴</div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: 2D Canvas Roll & Steko Checkout Box (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="steko-card p-5">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-orange-600 animate-pulse"></span>
+                  <span class="font-heading font-extrabold text-xs uppercase text-slate-900 tracking-wider">Схема розкладки на рулоні</span>
+                </div>
+                <span class="text-[10px] font-mono font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">ШИРИНА 1524 ММ</span>
+              </div>
+
+              <div class="relative rounded-xl overflow-hidden mb-4 border border-slate-200">
+                <canvas id="roll-cutting-canvas"></canvas>
+              </div>
+
+              <div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-slate-50 border border-slate-100 text-center font-mono">
+                <div>
+                  <div class="text-[10px] text-slate-400 uppercase">Чиста площа</div>
+                  <div id="calc-total-m2" class="text-sm font-bold text-slate-900">0 м²</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-slate-400 uppercase">Довжина полотна</div>
+                  <div id="calc-total-linear" class="text-sm font-bold text-orange-600">0 м</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-slate-400 uppercase">Відхід плотера</div>
+                  <div id="calc-waste-percent" class="text-sm font-bold text-emerald-600">0%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cost Summary Box -->
+            <div class="steko-card p-6 space-y-4">
+              <h3 class="font-heading font-extrabold text-sm uppercase text-slate-900 tracking-wider pb-3 border-b border-slate-100">
+                Кошторис вашого замовлення:
+              </h3>
+
+              <div class="space-y-2 text-xs font-mono">
+                <div class="flex justify-between text-slate-600">
+                  <span>Плівка з плотерним розкроєм:</span>
+                  <span id="calc-film-cost" class="font-bold text-slate-900">0 ₴</span>
+                </div>
+                <div class="flex justify-between text-slate-600">
+                  <span>Комплект інструментів:</span>
+                  <span id="calc-tool-cost" class="font-bold text-slate-900">0 ₴</span>
+                </div>
+                <div class="flex justify-between text-slate-600">
+                  <span>Посилений захисний тубус:</span>
+                  <span id="calc-tube-fee" class="font-bold text-slate-900">120 ₴</span>
+                </div>
+                <div class="flex justify-between text-slate-600">
+                  <span>Страховка «Zero Risk» (заміна помилки):</span>
+                  <span class="font-bold text-emerald-600">0 ₴ (ВКЛЮЧЕНО)</span>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <div>
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Разом до сплати:</div>
+                  <div id="calc-grand-total" class="text-3xl font-mono font-black text-slate-900">0 ₴</div>
+                </div>
+
+                <button onclick="openOrderModal()" class="btn-steko btn-steko-primary text-xs shadow-md">
+                  <span>Оформити бокс 📦</span>
+                </button>
+              </div>
+
+              <div class="text-[11px] text-slate-500 text-center pt-2">
+                🔒 Оплата при отриманні на Новій Пошті або картою «єВідновлення»
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. UNBOXING THE "ПОКЛЕЙ САМ" KIT -->
+    <section id="unboxing" class="py-16 lg:py-20 border-b border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-50 text-emerald-800 text-xs font-mono font-bold uppercase mb-3">
+            <span>📦</span>
+            <span>ЩО ВСЕРЕДИНІ ВАШОГО ТУБУСА</span>
+          </div>
+          <h2 class="steko-section-title">
+            Фірмовий набір <span>«Поклей Сам»</span> від KMSS+
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Все необхідне для ідеального монтажу без бульбашок та пилу вже зібрано в один бокс.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          
+          <div class="steko-card p-4 text-center">
+            <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 text-xl font-bold flex items-center justify-center mx-auto mb-3">
+              📐
+            </div>
+            <div class="font-heading font-bold text-xs text-slate-900 mb-1">Нарізана плівка</div>
+            <p class="text-[11px] text-slate-500 font-mono">Точний плотерний розкрій ±1 мм з маркуванням кожної стулки.</p>
+          </div>
+
+          <div class="steko-card p-4 text-center">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 text-xl font-bold flex items-center justify-center mx-auto mb-3">
+              🧰
+            </div>
+            <div class="font-heading font-bold text-xs text-slate-900 mb-1">Вигонка Blue Max</div>
+            <p class="text-[11px] text-slate-500 font-mono">Оригінальний американський силіконовий ракель максимального притиску.</p>
+          </div>
+
+          <div class="steko-card p-4 text-center">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 text-xl font-bold flex items-center justify-center mx-auto mb-3">
+              🧪
+            </div>
+            <div class="font-heading font-bold text-xs text-slate-900 mb-1">Концентрат Film-On</div>
+            <p class="text-[11px] text-slate-500 font-mono">Спеціальний розчин ковзання для легкого позиціонування без слідів.</p>
+          </div>
+
+          <div class="steko-card p-4 text-center">
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 text-xl font-bold flex items-center justify-center mx-auto mb-3">
+              🛡️
+            </div>
+            <div class="font-heading font-bold text-xs text-slate-900 mb-1">Страховка помилки</div>
+            <p class="text-[11px] text-slate-500 font-mono">Зіпсували шматок під час поклейки? Безкоштовно надішлемо заміну!</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. "єВІДНОВЛЕННЯ" AND STATE CERTIFICATION -->
+    <section id="evidnovlennya" class="py-14 lg:py-18 border-b border-slate-200 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div class="space-y-4 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase">
+              <span>🇺🇦</span>
+              <span>ДЕРЖАВНА ПРОГРАМА «єВІДНОВЛЕННЯ»</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-heading font-black uppercase text-white leading-tight">
+              Оплата карткою «єВідновлення» та сертифікати ДСТУ
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+              Ви можете повністю розрахуватися карткою «єВідновлення» за будь-який комплект бронеплівки та інструментів. 
+              Кожна партія плівки супроводжується офіційним протоколом випробувань та сертифікатом відповідності <strong>ДСТУ EN 356</strong>. 
+              Надаємо повний пакет документів та безготівковий розрахунок з ПДВ для ОСББ, шкіл, лікарень та бізнесу.
+            </p>
+          </div>
+
+          <div class="shrink-0 flex flex-col sm:flex-row gap-3">
+            <button onclick="openLeadModal('Консультація по єВідновленню')" class="btn-steko btn-steko-primary text-xs whitespace-nowrap shadow-lg">
+              Розрахуватися карткою єВідновлення
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 12. COMPREHENSIVE FAQ (KIEVTONSERVICE QUESTIONS + KMSS DIY SOLUTIONS) -->
+    <section id="faq" class="py-16 lg:py-24 border-b border-slate-200 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-mono font-bold uppercase mb-3">
+            <span>❓</span>
+            <span>ЧАСТІ ЗАПИТАННЯ</span>
+          </div>
+          <h2 class="steko-section-title">
+            Поширені <span>запитання</span>
+          </h2>
+          <p class="text-slate-500 text-sm mt-3">
+            Відповіді на запитання щодо захисту, монтажу, цін та доставки.
+          </p>
+        </div>
+
+        <div class="space-y-3 font-sans">
+          
+          <details class="steko-card p-5 group cursor-pointer">
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Що таке бронеплівка для вікон та як вона працює?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Бронеплівка — це оптично прозора багатошарова полімерна плівка з високоеластичного поліетилентерефталату (PET) зі спеціальним чутливим до тиску клейовим шаром. При ударі або вибуховій хвилі плівка гасить енергію удару: скло може тріснути сіткою «павутиною», але утримується монолітом на плівці, не влітаючи в кімнату.
+            </p>
+          </details>
+
+          <details class="steko-card p-5 group cursor-pointer" open>
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Чи захищає бронеплівка від вибухових хвиль ракет та дронів?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Так! Основна небезпека при вибухах — це не сама хвиля на відстані, а тисячі гострих кинджальних осколків скла, що летять всередину квартири. Бронеплівка KMSS 300 мкм (клас Р1А) утримує до 98% уламків скла. Звісно, при прямому влучанні треба перебувати в укритті, але від вибухової хвилі сусідніх прильотів бронеплівка рятує життя.
+            </p>
+          </details>
+
+          <details class="steko-card p-5 group cursor-pointer">
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Чи зможу я поклеїти плівку самостійно без досвіду?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Так, 100%! Завдяки нашому фабричному розкрою під точні розміри ваших стулок (±1 мм) вам не потрібно нічого підрізати ножем на підлозі. Ми комплектуємо набір професійною американською вигонкою Blue Max та розчином Film-On. А коротке 3-хвилинне покрокове відео у Telegram показує кожен рух. Крім того, діє наша фірмова «Страховка від кривих рук»!
+            </p>
+          </details>
+
+          <details class="steko-card p-5 group cursor-pointer">
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Що таке «Страховка від кривих рук»?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Якщо ви випадково зім'яли полотно, загнули кут або впустили плівку на пильну підлогу — не хвилюйтеся. Сфотографуйте зіпсовану деталь і напишіть нам: ми безкоштовно наріжемо та надішлемо вам нову стулку! Ви оплачуєте лише доставку Новою Поштою.
+            </p>
+          </details>
+
+          <details class="steko-card p-5 group cursor-pointer">
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Чи видно бронеплівку на вікні після поклейки?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Плівка абсолютно кришталево прозора (світлопропускання 92-95%). Вона не змінює колір скла, не затемнює кімнату та не створює спотворень. Зовні та зсередини вікно виглядає як звичайний склопакет.
+            </p>
+          </details>
+
+          <details class="steko-card p-5 group cursor-pointer">
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Який термін служби бронеплівки?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Термін експлуатації становить 10-15 років. Плівка має антиподряпинне покриття (Anti-Scratch), не жовтіє від сонячних променів і миється звичайними миючими засобами без абразивів.
+            </p>
+          </details>
+
+          <details class="steko-card p-5 group cursor-pointer">
+            <summary class="font-heading font-extrabold text-sm sm:text-base text-slate-900 flex items-center justify-between list-none">
+              <span>Як замовити монтаж «під ключ» у моєму місті?</span>
+              <span class="text-orange-600 font-mono text-lg transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+              Наші сертифіковані монтажні бригади працюють у Дніпрі, Києві, Львові, Одесі, Харкові, Запоріжжі та областях. Залиште заявку або зателефонуйте (096) 771-38-08 — майстер приїде з каталогом зразків, зробить точний замір та змонтує плівку на об'єкті.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 13. QUICK CONTACTS & LOCATIONS BLOCK (KIEVTONSERVICE CITIES) -->
+    <section class="py-14 border-b border-slate-200 bg-[#f8fafc]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          
+          <div class="steko-card p-6 bg-white">
+            <div class="text-2xl mb-2">📞</div>
+            <div class="font-heading font-black text-sm text-slate-900 uppercase">Телефонуйте нам:</div>
+            <div class="font-mono text-base font-bold text-orange-600 mt-2">
+              <a href="tel:+380967713808" class="hover:underline">(096) 771-38-08</a>
+            </div>
+            <div class="font-mono text-xs text-slate-500 mt-1">
+              <a href="tel:+380673015500" class="hover:underline">+38 (067) 301-55-00</a>
+            </div>
+            <div class="text-[11px] text-slate-400 font-mono mt-2">Пн-Сб 08:00 - 20:00 (без вихідних)</div>
+          </div>
+
+          <div class="steko-card p-6 bg-white">
+            <div class="text-2xl mb-2">💬</div>
+            <div class="font-heading font-black text-sm text-slate-900 uppercase">Месенджери 24/7:</div>
+            <div class="flex justify-center gap-3 mt-3">
+              <a href="https://t.me/kmss_bot" target="_blank" class="btn-steko btn-steko-dark text-xs py-2 px-3">
+                ✈️ Telegram Бот
+              </a>
+              <a href="viber://chat?number=%2B380967713808" class="btn-steko btn-steko-outline text-xs py-2 px-3">
+                💜 Viber
+              </a>
+            </div>
+            <div class="text-[11px] text-slate-400 font-mono mt-3">Миттєвий розрахунок за фото вікон</div>
+          </div>
+
+          <div class="steko-card p-6 bg-white">
+            <div class="text-2xl mb-2">🚚</div>
+            <div class="font-heading font-black text-sm text-slate-900 uppercase">Доставка по Україні:</div>
+            <div class="font-heading font-bold text-slate-900 text-sm mt-2">Нова Пошта (24-48 годин)</div>
+            <div class="text-xs text-slate-500 font-mono mt-1">Київ, Дніпро, Львів, Одеса, Харків, Вінниця, Полтава...</div>
+            <div class="text-[11px] text-emerald-600 font-mono font-bold mt-2">Оплата при отриманні або карткою</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 14. CORPORATE FOOTER (WITH ORIGINAL BLACK LOGO PRESERVED) -->
+  <footer class="bg-white border-t border-slate-200 pt-14 pb-16 text-xs text-slate-600 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Company Info with Original Black Logo -->
+        <div class="space-y-4 md:col-span-2">
+          <img src="assets/logo/LOGOBlk.svg" alt="КОМФОРТ МОНТАЖ СПЕЦСЕРВІС +" class="h-11 sm:h-12 w-auto">
+          <p class="text-slate-500 max-w-md leading-relaxed text-xs">
+            ТОВ «Комфорт-Монтаж Спецсервіс Плюс». Національний виробник та сервіс індивідуального розкрою броньованих, протиосколкових і сонцезахисних плівок. 
+            Понад 10 000 м² змонтованого скла по всій Україні.
+          </p>
+          <div class="text-[11px] text-slate-800 font-mono font-bold">
+            Сертифікат ДСТУ EN 356 • Класи К1, К2, К4, Р1А, Р2А • Офіційний партнер «єВідновлення»
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="space-y-2.5">
+          <div class="font-heading font-extrabold text-slate-900 uppercase tracking-wider text-xs mb-3">Продукція:</div>
+          <div><a href="#products" class="hover:text-orange-600 transition-colors">Бронеплівка 300 мкм (Р1А)</a></div>
+          <div><a href="#products" class="hover:text-orange-600 transition-colors">Бронеплівка 200 мкм (К2)</a></div>
+          <div><a href="#products" class="hover:text-orange-600 transition-colors">Бронеплівка 400 мкм (Р2А)</a></div>
+          <div><a href="#products" class="hover:text-orange-600 transition-colors">Сонцезахисні Silver 20%</a></div>
+          <div><a href="#calculator" class="hover:text-orange-600 transition-colors">Калькулятор розкрою рулону</a></div>
+          <div><a href="#unboxing" class="hover:text-orange-600 transition-colors">Набір «Поклей Сам»</a></div>
+        </div>
+
+        <!-- Hotlines & Contacts -->
+        <div class="space-y-2.5">
+          <div class="font-heading font-extrabold text-slate-900 uppercase tracking-wider text-xs mb-3">Гаряча лінія:</div>
+          <div>Тел: <a href="tel:+380967713808" class="text-slate-900 font-bold hover:text-orange-600">(096) 771-38-08</a></div>
+          <div>Тел: <a href="tel:+380673015500" class="text-slate-900 font-bold hover:text-orange-600">+38 (067) 301-55-00</a></div>
+          <div>Telegram: <a href="https://t.me/kmss_bot" target="_blank" class="text-sky-600 font-bold hover:underline">@kmss_bot</a></div>
+          <div>Email: <a href="mailto:zakaz.kmss@gmail.com" class="text-slate-700 hover:underline">zakaz.kmss@gmail.com</a></div>
+          <div>Графік роботи: Пн-Сб 08:00 - 20:00</div>
+          <div>Доставка: Нова Пошта за 24 год по всій Україні</div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 font-mono">
+        <div>© 2026 «Комфорт-Монтаж Спецсервіс Плюс». Всі права захищено.</div>
+        <div class="flex gap-4">
+          <span>Дніпро • Київ • Львів • Одеса • Харків • Вінниця • Полтава • Запоріжжя</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY DOCK (FOR HIGH MOBILE CONVERSIONS) -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 steko-mobile-dock px-4 py-3 flex items-center justify-between gap-4">
+    <div>
+      <div class="text-[10px] font-mono text-slate-400 uppercase">
+        Розрахунок: <span id="sticky-bar-count" class="text-slate-900 font-bold">3 вікна</span>
+      </div>
+      <div id="sticky-bar-total" class="text-xl font-mono font-black text-slate-900">0 ₴</div>
+    </div>
+    <div class="flex gap-2">
+      <a href="tel:+380967713808" class="btn-steko btn-steko-dark text-xs py-2 px-3">
+        📞 Дзвінок
+      </a>
+      <button onclick="openLeadModal('Мобільна плашка')" class="btn-steko btn-steko-primary text-xs py-2 px-4 shadow">
+        Знижка 10% ⚡
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL 1: FAST 10% DISCOUNT & LEAD MODAL (KIEVTONSERVICE STYLE) -->
+  <div id="lead-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="steko-card max-w-md w-full p-6 sm:p-7 relative shadow-2xl bg-white">
+      
+      <button onclick="closeLeadModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-xl font-bold">
+        ✕
+      </button>
+
+      <div class="border-b border-slate-100 pb-3 mb-4">
+        <span class="inline-block px-2.5 py-1 rounded bg-red-100 text-red-700 text-[10px] font-mono font-bold uppercase mb-2">
+          ЗНИЖКА 10% НА БРОНЕПЛІВКУ
+        </span>
+        <h3 class="font-heading font-extrabold text-lg text-slate-900 uppercase" id="lead-modal-title">
+          Попередній розрахунок вартості
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">
+          Залиште телефон — наш інженер передзвонить за 5 хвилин з готовим розрахунком та порадить оптимальний клас броні.
+        </p>
+      </div>
+
+      <form onsubmit="submitGenericLead(event)" class="space-y-3 font-mono text-xs">
+        <div>
+          <label class="block text-slate-600 mb-1 uppercase font-bold">Ваше ім'я:</label>
+          <input 
+            id="generic-lead-name" 
+            type="text" 
+            placeholder="Олексій" 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+          />
+        </div>
+
+        <div>
+          <label class="block text-slate-600 mb-1 uppercase font-bold">Номер телефону *:</label>
+          <input 
+            id="generic-lead-phone" 
+            type="tel" 
+            required 
+            placeholder="+380 (__) ___-__-__" 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm font-mono outline-none focus:border-orange-500 text-xs"
+          />
+        </div>
+
+        <div>
+          <label class="block text-slate-600 mb-1 uppercase font-bold">Орієнтовна площа або запитання:</label>
+          <input 
+            id="generic-lead-desc" 
+            type="text" 
+            placeholder="Наприклад: 3 вікна в квартирі, м. Дніпро..." 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+          />
+        </div>
+
+        <button type="submit" class="btn-steko btn-steko-primary w-full text-xs py-3.5 font-bold uppercase mt-2 shadow-lg">
+          Отримати розрахунок зі знижкою 10% 🚀
+        </button>
+
+        <p class="text-[10px] text-slate-400 text-center pt-1">
+          Працюємо під час тривог та відключень світла. Консультація безкоштовна.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 2: NOVA POSHTA CHECKOUT MODAL -->
+  <div id="order-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="steko-card max-w-lg w-full p-6 sm:p-8 relative max-h-[92vh] overflow-y-auto shadow-2xl">
+      
+      <button onclick="closeOrderModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-900 text-xl font-bold">
+        ✕
+      </button>
+
+      <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+        <span class="text-2xl">📦</span>
+        <div>
+          <h3 class="font-heading font-extrabold text-lg uppercase text-slate-900">
+            Оформлення замовлення KMSS
+          </h3>
+          <p class="text-[11px] text-slate-500 font-mono">Швидка доставка Новою Поштою по всій Україні</p>
+        </div>
+      </div>
+
+      <div id="order-form-block" class="space-y-4">
+        
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200" id="modal-order-summary"></div>
+
+        <form onsubmit="submitOrder(event)" class="space-y-3 font-mono text-xs">
+          <div>
+            <label class="block text-slate-600 mb-1 uppercase font-bold">Ваше Ім'я та Прізвище:</label>
+            <input 
+              id="order-name" 
+              type="text" 
+              required 
+              placeholder="Олександр Коваленко" 
+              class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+            />
+          </div>
+
+          <div>
+            <label class="block text-slate-600 mb-1 uppercase font-bold">Номер телефону (для ТТН):</label>
+            <input 
+              id="order-phone" 
+              type="tel" 
+              required 
+              placeholder="+380 (__) ___-__-__" 
+              class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-slate-600 mb-1 uppercase font-bold">Місто доставки:</label>
+              <select 
+                id="order-city-select" 
+                onchange="updateWarehouses()" 
+                class="w-full px-3 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+              ></select>
+            </div>
+
+            <div>
+              <label class="block text-slate-600 mb-1 uppercase font-bold">Відділення Нової Пошти:</label>
+              <select 
+                id="order-warehouse-select" 
+                class="w-full px-3 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs"
+              ></select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-slate-600 mb-1 uppercase font-bold">Спосіб оплати:</label>
+            <select class="w-full px-3 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 outline-none focus:border-blue-600 text-xs">
+              <option>Накладений платіж (при отриманні після огляду тубуса)</option>
+              <option>Оплата карткою «єВідновлення»</option>
+              <option>Оплата онлайн (Apple Pay / Google Pay / Visa / MC)</option>
+              <option>Безготівковий розрахунок (ФОП / ТОВ з ПДВ)</option>
+            </select>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <div class="text-[10px] text-slate-400 uppercase">Сума до сплати:</div>
+              <div id="modal-order-total" class="text-2xl font-black text-slate-900">0 ₴</div>
+            </div>
+
+            <button type="submit" class="btn-steko btn-steko-primary text-xs py-3 px-6">
+              Підтвердити замовлення 🚀
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+      <div id="order-success-block" class="hidden text-center py-6 space-y-4">
+        <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 text-2xl flex items-center justify-center mx-auto font-bold">
+          ✓
+        </div>
+        <h4 class="font-heading font-extrabold text-xl text-slate-900 uppercase">Замовлення прийнято у виробництво!</h4>
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 font-mono text-xs">
+          <div class="text-slate-500">Номер накладної (ТТН):</div>
+          <div id="success-ttn-number" class="text-base font-bold text-orange-600 tracking-wider mt-1">20450123456789</div>
+        </div>
+        <p id="success-order-desc" class="text-xs text-slate-600 leading-relaxed"></p>
+        <button onclick="closeOrderModal()" class="btn-steko btn-steko-dark text-xs uppercase mt-2">
+          Зрозуміло, дякую!
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL 3: VIDEO CRASH TEST MODAL -->
+  <div id="video-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden">
+    <div class="steko-card max-w-2xl w-full p-6 relative bg-slate-900 text-white border-slate-800 shadow-2xl">
+      <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold">
+        ✕
+      </button>
+
+      <div class="mb-4">
+        <h3 id="video-modal-title" class="font-heading font-black text-lg text-white uppercase">Краш-тест бронеплівки</h3>
+        <p id="video-modal-desc" class="text-xs text-slate-400 mt-1">Демонстрація міцності протиударного скла під навантаженням</p>
+      </div>
+
+      <div class="aspect-video bg-black rounded-xl overflow-hidden relative flex items-center justify-center border border-slate-800">
+        <!-- Interactive Animated Simulation Canvas / Mockup -->
+        <canvas id="video-simulation-canvas" class="w-full h-full"></canvas>
+        <div id="video-play-overlay" class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 cursor-pointer" onclick="runVideoSimulation()">
+          <div class="w-16 h-16 rounded-full bg-orange-600 text-white flex items-center justify-center text-2xl pl-1 shadow-2xl animate-pulse">
+            ▶
+          </div>
+          <div class="text-xs font-mono text-white mt-3 font-bold uppercase tracking-wider">Натисніть для запуску симуляції удару</div>
+        </div>
+      </div>
+
+      <div class="mt-4 flex justify-between items-center text-xs font-mono text-slate-400">
+        <span>Стандарт випробувань: ДСТУ EN 356</span>
+        <button onclick="closeVideoModal(); openLeadModal('Заявка після перегляду краш-тесту');" class="btn-steko btn-steko-primary text-xs py-2 px-4">
+          Замовити таку плівку 🛡️
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

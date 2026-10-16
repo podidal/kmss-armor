@@ -1,0 +1,266 @@
+/* ==========================================================================
+   KMSS+ ENTERPRISE MANUFACTURING PORTAL
+   Kievtonservice & Steko Hybrid Direct-Response Architecture
+   100% Unaltered Original Black LOGOBlk.svg | (c) 2026 «Комфорт-Монтаж»
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --kmss-blue: #1d4ed8;
+  --kmss-blue-dark: #1e3a8a;
+  --kmss-orange: #ea580c;
+  --kmss-orange-hover: #c2410c;
+  --kmss-red: #dc2626;
+  
+  --bg-page: #f8fafc;
+  --bg-white: #ffffff;
+  
+  --text-heading: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  
+  --border-light: #e2e8f0;
+  --border-focus: #1d4ed8;
+
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  letter-spacing: -0.015em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Steko Corporate Card */
+.steko-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.steko-card:hover {
+  box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.1);
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+}
+
+/* Push Buttons with Microinteractions */
+.btn-steko {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn-steko:active {
+  transform: scale(0.97);
+}
+
+.btn-steko-primary {
+  background-color: var(--kmss-orange);
+  color: #ffffff;
+  border: 1px solid var(--kmss-orange);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.25);
+}
+
+.btn-steko-primary:hover {
+  background-color: var(--kmss-orange-hover);
+  border-color: var(--kmss-orange-hover);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-steko-blue {
+  background-color: var(--kmss-blue);
+  color: #ffffff;
+  border: 1px solid var(--kmss-blue);
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.25);
+}
+
+.btn-steko-blue:hover {
+  background-color: var(--kmss-blue-dark);
+  border-color: var(--kmss-blue-dark);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-steko-dark {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: 1px solid #0f172a;
+}
+
+.btn-steko-dark:hover {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+.btn-steko-outline {
+  background-color: transparent;
+  color: var(--text-heading);
+  border: 1px solid var(--border-light);
+}
+
+.btn-steko-outline:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+/* Steko 10-Box Indicator Bar */
+.property-indicator {
+  margin-bottom: 0.6rem;
+}
+
+.property-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.rating-boxes {
+  display: flex;
+  gap: 3px;
+}
+
+.rating-box {
+  flex: 1;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.rating-box.filled {
+  background-color: var(--kmss-blue);
+}
+
+.rating-box.filled-orange {
+  background-color: var(--kmss-orange);
+}
+
+.rating-box.filled-emerald {
+  background-color: #10b981;
+}
+
+/* Steko Category Navigation Tabs */
+.steko-category-tabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  background: #f1f5f9;
+  border-radius: 14px;
+  border: 1px solid var(--border-light);
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.steko-tab-btn {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.steko-tab-btn:hover {
+  color: var(--text-heading);
+}
+
+.steko-tab-btn.active {
+  background: #ffffff;
+  color: var(--text-heading);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Steko Section Titles */
+.steko-section-title {
+  font-size: 1.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+@media (min-width: 640px) {
+  .steko-section-title {
+    font-size: 2.25rem;
+  }
+}
+
+.steko-section-title span {
+  color: var(--kmss-orange);
+}
+
+/* Roll Cutting Canvas */
+#roll-cutting-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  display: block;
+}
+
+/* Mobile Sticky Bottom Bar */
+.steko-mobile-dock {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--border-light);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Details & FAQ Animations */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .group-open\:rotate-45 {
+  transform: rotate(45deg);
+}
+
+/* Pulse badges & Highlights */
+@keyframes alertPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-alert {
+  animation: alertPulse 2s infinite ease-in-out;
+}
